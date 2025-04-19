@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5 text-center">
+    <h1>Welcome to BenWebApps!</h1>
+    <p class="lead">A modular Python web app with user management.<br>
+    <a href="{{ url_for('user_management.login') }}" class="btn btn-primary mt-3">Login</a>
+    <a href="{{ url_for('user_management.register') }}" class="btn btn-success mt-3">Register</a></p>
+</div>
+{% endblock %}
